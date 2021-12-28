@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<games>
+    <section name="Sandbox">
+        <entry>
+            <title>The Sims</title>
+            <price>50</price>
+        </entry>
+        <entry>
+            <title>Minecraft</title>
+            <price>80</price>
+        </entry>
+        <entry multiplayer="true">
+            <title>Grand Theft Auto</title>
+            <price>75</price>
+        </entry>        
+    </section>
+    <section name="Real-time strategy">
+        <entry>
+            <title>Warcraft</title>
+            <price>49.90</price>
+        </entry>
+        <entry>
+            <title>Age of Empires</title>
+            <price>94.25</price>
+        </entry>
+        <entry multiplayer="true">
+            <title>Command &amp; Conquer</title>
+            <price>77.50</price>
+        </entry>        
+    </section>
+    <section name="FPS">
+        <entry>
+            <title>Fortnite</title>
+            <price>120</price>
+        </entry>
+        <entry>
+            <title>Call of Duty</title>
+            <price>119</price>
+        </entry>
+        <entry multiplayer="true">
+            <title>Gears of War</title>
+            <price>105</price>
+        </entry>        
+    </section>
+    <section name="Online Battle Arena">
+        <entry>
+            <title>Dota 2</title>
+            <price>99.50</price>
+        </entry>
+        <entry>
+            <title>League of Legends</title>
+            <price>86.75</price>
+        </entry>
+        <entry multiplayer="true">
+            <title>Smite</title>
+            <price>55.65</price>
+        </entry>        
+    </section>
+    <section name="Role-playing">
+        <entry>
+            <title>Dungeons &amp; Dragons</title>
+            <price>49.95</price>
+        </entry>
+        <entry>
+            <title>The Witcher 3</title>
+            <price>65.25</price>
+        </entry>
+        <entry multiplayer="true">
+            <title>Fallout 4</title>
+            <price>115.75</price>
+        </entry>        
+    </section>
+</games>
