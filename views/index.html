@@ -7,16 +7,13 @@
         <meta name="author" content="" />
         <title>Games For Nerds</title>
         <!-- Favicon-->
-
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- CSS and Bootstrap-->
         <link href="css/style.css" rel="stylesheet" />
-        <!-----Scripts----->
+        <link href="css/GamesForNerds.css" rel="stylesheet" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
         <script src="js/table.js"></script>
     </head>
     <body>
@@ -43,6 +40,50 @@
             </div>
           </nav>
           <!-- Content-->
-          
+          <div class="container">
+            <div class="row">
+                <div class="text-center mt-5">
+                    <h1>Games for Different Consoles</h1>
+                    <h4 class="mb-5">Select the game in the list below:</h4>
+                </div>
+                <div id="results" class="col-lg-8 order-2 mb-5"></div>
+                <div class="col-lg-4 order-1 mb-3">
+                    <form>
+                        <div class="form-group">
+                            <select id="section" class="form-control" name="sec_n">
+                                <option value="0">Sandbox</option>
+                                <option value="1">Real-time strategy</option>
+                                <option value="2">FPS</option>
+                                <option value="3">Online Battle Arena</option>
+                                <option value="4">Role-playing</option>
+                            </select>
+                            <input id="title" class="form-control mt-3" type="text" name="title" placeholder="Type the title Here"/>
+                            <input id="price" class="form-control mt-3" type="text" name="price" placeholder="Price"/>
+                        </div>
+                    </form>
+                    <div class="d-grid gap-2">
+                        <button id="append" class="btn btn-primary btn-block mt-3" onClick="append()">Submit</button>
+                        <button id="delete" class="btn btn-danger btn-block">Delete</button>
+                        <p class="text-muted text-center">To delete a game, select the row first</p>
+                    </div>
+                </div>
+            </div>
+            <!------Total Area-------->
+            <form class="total">
+                <p><input type="button" name="btnTotal" value="Show total" id="totalValue">
+                       Total: €
+                       <input type="text" name="txtTotal" id="totalPrice">
+                       <input type="checkbox" name="cbOpts" value="isMult" id="multiplayer">
+                       <label for="multiplayer"> Show multiplayer options</label></p>
+                       <input type="reset" value="Clear" onclick="clean()">
+             </form>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
+    <footer class="text-muted">
+        <p>Developed by Priscilla Betuyaku | Student number: 2019217</p>
+    </footer>
 </html>

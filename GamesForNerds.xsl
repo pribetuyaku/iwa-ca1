@@ -5,7 +5,7 @@
     <thead>
         <tr>
             <th>Select</th>
-            <th>Category</th>
+            <th>Title</th>
             <th>Price</th>
         </tr>
     </thead>
@@ -22,10 +22,10 @@
                         <xsl:value-of select="boolean(@multiplayer)" />
                     </xsl:attribute>
                     <td align="center">
-                        <input name="category0" type="checkbox" />
+                        <input name="title0" type="checkbox" />
                     </td>
                     <td>
-                        <xsl:value-of select="category" />
+                        <xsl:value-of select="title" />
                     </td>
                     <td align="right">
                         <xsl:value-of select="price" />
