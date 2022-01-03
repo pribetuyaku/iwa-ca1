@@ -15,7 +15,6 @@ function calculateBill(idMenuTable) {
         if (aCBTags[i].checked) {
             // get the checkbox' parent table row
             var oTR = getParentTag(aCBTags[i], 'TR');
-
             // retrieve the price from the price column, which is the third column in the table
             var oTDPrice = oTR.getElementsByTagName('TD')[2];
             // the first child text node of the column contains the price
@@ -26,7 +25,7 @@ function calculateBill(idMenuTable) {
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
 // This function either turns on or off the row highlighting for multiplayer games
-function highlightMultiplayer(idTable, bShowMulti) {
+function highlightmultiplayer(idTable, bShowMulti) {
     // if bShowMulti is true, then we're highlighting multiplayer games
     // otherwise we're unhighlighting them.
     var i = 0;
@@ -61,7 +60,7 @@ window.addEventListener("load", function () {
         document.forms[0].txtBillAmt.value = calculateBill('menuTable');
     });
     document.querySelector("#showMulti").addEventListener("click", function () {
-        highlightMultiplayer('menuTable', this.checked);
+        highlightmultiplayer('menuTable', this.checked);
     });
 });
 
@@ -115,16 +114,14 @@ window.onload = function() {
     subjectSel.options[subjectSel.options.length] = new Option(x, x);
   }
   subjectSel.onchange = function() {
-    //empty Chapters- and Topics- dropdowns
+  
     chapterSel.length = 1;
     topicSel.length = 1;
-    //display correct values
     for (var y in subjectObject[this.value]) {
       topicSel.options[topicSel.options.length] = new Option(y, y);
     }
   }
   topicSel.onchange = function() {
-    //empty Chapters dropdown
     chapterSel.length = 1;
     //display correct values
     var z = subjectObject[subjectSel.value][this.value];

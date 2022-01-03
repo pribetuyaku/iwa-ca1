@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<games>
-    <section name="Sandbox">
-        <entry>
-            <title>The Sims</title>
-            <price>50.0</price>
-        </entry>
-        <entry>
-            <title>Minecraft</title>
-            <price>80.0</price>
-        </entry>
-        <entry multiplayer="true">
-            <title>Combo A</title>
-            <price>110.0</price>
-        </entry>        
-    </section>
-    <section name="Real-time strategy">
-        <entry>
-            <title>Warcraft</title>
-            <price>49.90</price>
-        </entry>
-        <entry>
-            <title>Age of Empires</title>
-            <price>94.25</price>
-        </entry>
-        <entry multiplayer="true">
-            <title>Combo B</title>
-            <price>119.50</price>
-        </entry>        
-    </section>
-    <section name="FPS">
-        <entry>
-            <title>Fortnite</title>
-            <price>120.0</price>
-        </entry>
-        <entry>
-            <title>Call of Duty</title>
-            <price>119.0</price>
-        </entry>
-        <entry multiplayer="true">
-            <title>Combo C</title>
-            <price>200.0</price>
-        </entry>        
-    </section>
-    <section name="Online Battle Arena">
-        <entry>
-            <title>Dota 2</title>
-            <price>99.50</price>
-        </entry>
-        <entry>
-            <title>League of Legends</title>
-            <price>86.75</price>
-        </entry>
-        <entry multiplayer="true">
-            <title>Combo D</title>
-            <price>150.65</price>
-        </entry>        
-    </section>
-    <section name="Role-playing">
-        <entry>
-            <title>Dungeons &amp; Dragons</title>
-            <price>49.95</price>
-        </entry>
-        <entry>
-            <title>The Witcher 3</title>
-            <price>65.25</price>
-        </entry>
-        <entry multiplayer="true">
-            <title>Combo E</title>
-            <price>99.75</price>
-        </entry>        
-    </section>
-</games>
+<menu>
+  <section name="Sandbox">
+    <entry>
+      <title>The Sims</title>
+      <price>50.0</price>
+    </entry>
+    <entry>
+      <title>Minecraft</title>
+      <price>80.0</price>
+    </entry>
+    <entry multiplayer="true">
+      <title>Combo A</title>
+      <price>110.0</price>
+    </entry>
+  </section>
+  <section name="Real-time strategy">
+    <entry>
+      <title>Warcraft</title>
+      <price>49.90</price>
+    </entry>
+    <entry>
+      <title>Age of Empires</title>
+      <price>94.25</price>
+    </entry>
+    <entry multiplayer="true">
+      <title>Combo B</title>
+      <price>119.50</price>
+    </entry>
+  </section>
+  <section name="FPS">
+    <entry>
+      <title>Fortnite</title>
+      <price>120.0</price>
+    </entry>
+    <entry>
+      <title>Call of Duty</title>
+      <price>119.0</price>
+    </entry>
+    <entry multiplayer="true">
+      <title>Combo C</title>
+      <price>200.0</price>
+    </entry>
+  </section>
+  <section name="Online Battle Arena">
+    <entry>
+      <title>Dota 2</title>
+      <price>99.50</price>
+    </entry>
+    <entry>
+      <title>League of Legends</title>
+      <price>86.75</price>
+    </entry>
+    <entry multiplayer="true">
+      <title>Combo D</title>
+      <price>150.65</price>
+    </entry>
+  </section>
+  <section name="Role-playing">
+    <entry>
+      <title>Dungeons &amp; Dragons</title>
+      <price>49.95</price>
+    </entry>
+    <entry>
+      <title>The Witcher 3</title>
+      <price>65.25</price>
+    </entry>
+    <entry multiplayer="true">
+      <title>Combo E</title>
+      <price>99.75</price>
+    </entry>
+  </section>
+</menu>

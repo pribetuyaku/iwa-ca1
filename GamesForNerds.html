@@ -4,9 +4,8 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Game for Nerds</title>
-      <style></style>
       <script>
-          var gEntreeCount = 0;
+      var gEntreeCount = 0;
 // returns a number that represents the sum of all the selected game menu
 function calculateBill(idMenuTable) {
     var fBillTotal = 0.0;
@@ -23,7 +22,6 @@ function calculateBill(idMenuTable) {
         if (aCBTags[i].checked) {
             // get the checkbox' parent table row
             var oTR = getParentTag(aCBTags[i], 'TR');
-
             // retrieve the price from the price column, which is the third column in the table
             var oTDPrice = oTR.getElementsByTagName('TD')[2];
             // the first child text node of the column contains the price
@@ -34,10 +32,9 @@ function calculateBill(idMenuTable) {
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
 // This function either turns on or off the row highlighting for multiplayer games
-function highlightMultiplayer(idTable, bShowMulti) {
+function highlightmultiplayer(idTable, bShowMulti) {
     // if bShowMulti is true, then we're highlighting multiplayer games
-    // otherwise we're unhighlighting them.
-    var i = 0;
+        var i = 0;
     var oTable = document.getElementById(idTable);
     var oTBODY = oTable.getElementsByTagName('TBODY')[0];
     var aTRs = oTBODY.getElementsByTagName('TR');
@@ -68,8 +65,8 @@ window.addEventListener("load", function () {
     document.querySelector("#calcBill").addEventListener("click", function () {
         document.forms[0].txtBillAmt.value = calculateBill('menuTable');
     });
-    document.querySelector("#ShowMulti").addEventListener("click", function () {
-        highlightMultiplayer('menuTable', this.checked);
+    document.querySelector("#showMulti").addEventListener("click", function () {
+        highlightmultiplayer('menuTable', this.checked);
     });
 });
       </script>
