@@ -4,12 +4,12 @@ function calculateBill(idMenuTable) {
     var fBillTotal = 0.0;
     var i = 0;
     // find the game tag
-    var oGame = document.getElementById(idMenuTable);
+    var oTable = document.getElementById(idMenuTable);
     // go through the table and add up the prices of all
     // the selected games. The code takes advantage of the 
     // fact that each checkbox has a corresponding row in
     // the table, and the only INPUT tags are the checkboxes.
-    var aCBTags = oGame.getElementsByTagName('INPUT');
+    var aCBTags = oTable.getElementsByTagName('INPUT');
     for (i = 0; i < aCBTags.length; i++) {
         // is this game selected? it is if the checkbox is checked
         if (aCBTags[i].checked) {
@@ -30,8 +30,8 @@ function highlightMultiplayer(idTable, bShowMulti) {
     // if bShowMulti is true, then we're highlighting multiplayer games
     // otherwise we're unhighlighting them.
     var i = 0;
-    var oGame = document.getElementById(idTable);
-    var oTBODY = oGame.getElementsByTagName('TBODY')[0];
+    var oTable = document.getElementById(idTable);
+    var oTBODY = oTable.getElementsByTagName('TBODY')[0];
     var aTRs = oTBODY.getElementsByTagName('TR');
     // walk through each of the table rows and see if it has a multiplayer attribute on it.
     for (i = 0; i < aTRs.length; i++) {
@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
     document.querySelector("#calcBill").addEventListener("click", function () {
         document.forms[0].txtBillAmt.value = calculateBill('menuTable');
     });
-    document.querySelector("#ShowMulti").addEventListener("click", function () {
+    document.querySelector("#showMulti").addEventListener("click", function () {
         highlightMultiplayer('menuTable', this.checked);
     });
 });
@@ -71,7 +71,7 @@ function cart() {
         
       alert("Item added to your cart!");
         
-      document.getElementById("ShowMulti").reset();
+      document.getElementById("showMulti").reset();
      
     } else {
       
@@ -79,7 +79,7 @@ function cart() {
     document.getElementById("demo").innerHTML = txt;
   }
 
-  var comboObject = {
+  var subjectObject = {
     "Combo A": {
       "The Sims": ["€ 50.00"],
       "Minecraft": ["€ 80.00"],
@@ -104,5 +104,32 @@ function cart() {
     "Dungeons & Dragons": ["€ 49.95"],
     "The Witcher 3": ["€ 65.25"],
     "Combo E": ["€ 99.75"] 
+  }
+}
+//Reference https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
   }
 }
