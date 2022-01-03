@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <games>
     <section name="Sandbox">
         <entry>
             <title>The Sims</title>
-            <price>50</price>
+            <price>50.0</price>
         </entry>
         <entry>
             <title>Minecraft</title>
-            <price>80</price>
+            <price>80.0</price>
         </entry>
         <entry multiplayer="true">
-            <title>Grand Theft Auto</title>
-            <price>75</price>
+            <title>Combo A</title>
+            <price>110.0</price>
         </entry>        
     </section>
     <section name="Real-time strategy">
@@ -24,22 +24,22 @@
             <price>94.25</price>
         </entry>
         <entry multiplayer="true">
-            <title>Command &amp; Conquer</title>
-            <price>77.50</price>
+            <title>Combo B</title>
+            <price>119.50</price>
         </entry>        
     </section>
     <section name="FPS">
         <entry>
             <title>Fortnite</title>
-            <price>120</price>
+            <price>120.0</price>
         </entry>
         <entry>
             <title>Call of Duty</title>
-            <price>119</price>
+            <price>119.0</price>
         </entry>
         <entry multiplayer="true">
-            <title>Gears of War</title>
-            <price>105</price>
+            <title>Combo C</title>
+            <price>200.0</price>
         </entry>        
     </section>
     <section name="Online Battle Arena">
@@ -52,8 +52,8 @@
             <price>86.75</price>
         </entry>
         <entry multiplayer="true">
-            <title>Smite</title>
-            <price>55.65</price>
+            <title>Combo D</title>
+            <price>150.65</price>
         </entry>        
     </section>
     <section name="Role-playing">
@@ -66,8 +66,8 @@
             <price>65.25</price>
         </entry>
         <entry multiplayer="true">
-            <title>Fallout 4</title>
-            <price>115.75</price>
+            <title>Combo E</title>
+            <price>99.75</price>
         </entry>        
     </section>
 </games>

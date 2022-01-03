@@ -61,7 +61,7 @@ router.post('/post/json', function(req, res) {
         XMLtoJSON('GamesForNerds.xml', function (err, result){
             if (err) throw (err);
 
-            result.menu.section[obj.sec_n].entry.push({'category': obj.category, 'price': obj.price});
+            result.menu.section[obj.sec_n].entry.push({'title': obj.title, 'price': obj.price});
 
             console.log(JSON.stringify(result, null, " "));
 
