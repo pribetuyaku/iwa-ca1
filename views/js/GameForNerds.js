@@ -13,7 +13,7 @@ function calculateBill(idMenuTable) {
     for (i = 0; i < aCBTags.length; i++) {
         // is this game selected? it is if the checkbox is checked
         if (aCBTags[i].checked) {
-            // get the checkbox' parent table row
+            // get the checkbox parent table row
             var oTR = getParentTag(aCBTags[i], 'TR');
             // retrieve the price from the price column, which is the third column in the table
             var oTDPrice = oTR.getElementsByTagName('TD')[2];

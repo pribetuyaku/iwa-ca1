@@ -13,6 +13,7 @@ const   router = express(), //Instantiating Express
 router.use(express.static(path.resolve(__dirname,'views'))); //Serving static content from "views" folder
 router.use(express.json());
 
+//transforming the XML file to Json
 function XMLtoJSON(filename, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     fs.readFile(filepath, 'utf8', function(err, xmlStr){
@@ -20,7 +21,7 @@ function XMLtoJSON(filename, cb){
         xml2js.parseString(xmlStr, {}, cb);
     });
 };
-
+//transforming the Json file to XML
 function JSONtoXML(filename, obj, cb) {
     let filepath = path.normalize(path.join(__dirname, filename));
     let builder = new xml2js.Builder();
@@ -102,7 +103,7 @@ router.post('/post/delete', function(req, res){
     res.redirect('back');
 
 });
-
+//starting the server process
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
     const addr = server.address();
     console.log('Server listening at', addr.address + ':' + addr.port)
