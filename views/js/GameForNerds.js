@@ -64,19 +64,6 @@ window.addEventListener("load", function () {
     });
 });
 
-function cart() {
-    var txt;
-    if (confirm("Add this item to your Cart?")) {
-        
-      alert("Item added to your cart!");
-        
-      document.getElementById("showMulti").reset();
-     
-    } else {
-      
-    }
-    document.getElementById("demo").innerHTML = txt;
-  }
 
   var subjectObject = {
     "Combo A": {
